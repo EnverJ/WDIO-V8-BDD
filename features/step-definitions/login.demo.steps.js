@@ -16,7 +16,7 @@ When(/^user enter (.*) and (.*)$/, async (username, password) => {
 });
 
 When(/^user click in login button$/, async () => {
-  await $("//i[contains(text(),'Login')]").click();
+  (await $("//i[contains(text(),'Login')]")).click();
 });
 
 Then(/^user is navigated to the home pages$/, async () => {
